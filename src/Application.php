@@ -27,7 +27,7 @@ class Application
 
         // Load all config and add into container
         $config = [];
-        $directory = __DIR__ . '/config';
+        $directory = getcwd() . '/config';
         $iterator = new \RecursiveIteratorIterator(
             new \RecursiveDirectoryIterator($directory, \RecursiveDirectoryIterator::SKIP_DOTS),
             \RecursiveIteratorIterator::SELF_FIRST

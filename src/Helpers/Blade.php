@@ -6,13 +6,17 @@ class Blade {
 
     private static ?\Lexdubyna\Blade\Blade $blade = null;
 
-    public static function getBlade($components) {
+    public static function getBlade() {
 
         if (self::$blade == null) {
             self::$blade = new \Lexdubyna\Blade\Blade('views', 'cache');
-            self::$blade->compiler()->components($components);
         }
 
         return self::$blade;
+    }
+
+    public static function addComponents($components = []) {
+        $blade = self::getBlade();
+        $blade->compiler()->components($components);
     }
 }

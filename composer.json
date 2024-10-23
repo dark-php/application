@@ -4,7 +4,7 @@
     "type": "library",
     "homepage": "https://github.com/dark-php/application",
     "require": {
-        "darktec/router": "1.0.0-alpha.4",
+        "darktec/router": "1.0.0-alpha.5",
         "darktec/util": "1.0.0-alpha.1",
         "filp/whoops": "^2.16",
         "lexdubyna/blade": "^1.5",
